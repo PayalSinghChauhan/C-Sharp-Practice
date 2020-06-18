@@ -176,6 +176,7 @@ namespace Registrationform
                 SqlDataAdapter da = new SqlDataAdapter(query, sqlCon);
                 da.Fill(dt);
                 sqlCon.Close();
+
                 if (dt.Rows.Count > 0)
                 {
                     textBox1.Text = dt.Rows[0]["FirstName"].ToString();
